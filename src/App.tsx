@@ -6,7 +6,22 @@ export const App = () => {
   const [numberOne, setNumberOne] = useState(0);
   const [numberTwo, setNumberTwo] = useState(0);
   const calculateSum = () => {
-    const sum =  numberOne+ numberTwo;
+    const sum = numberOne + numberTwo;
+    setResult(sum);
+  };
+
+  const decreaseSum = () => {
+    const sum = numberOne - numberTwo;
+    setResult(sum);
+  };
+
+  const dividedSum = () => {
+    const sum = numberOne / numberTwo;
+    setResult(sum);
+  };
+
+  const multiplySum = () => {
+    const sum = numberOne * numberTwo;
     setResult(sum);
   };
 
@@ -22,6 +37,12 @@ export const App = () => {
             type="text"
             value={numberOne}
           />
+
+          <button onClick={dividedSum}>/</button>
+          <button onClick={multiplySum}>x</button>
+        </div>
+
+        <div>
           <input
             type="text"
             value={numberTwo}
@@ -29,9 +50,10 @@ export const App = () => {
               setNumberTwo(+e.target.value);
             }}
           />
+          <button onClick={calculateSum}>+</button>
+          <button onClick={decreaseSum}>-</button>
         </div>
 
-        <button onClick={calculateSum}>+</button>
         <label>result : {result}</label>
       </div>
     </div>
