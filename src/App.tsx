@@ -26,10 +26,10 @@ export const App = () => {
   };
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
       <h1>Play-Calculator</h1>
-      <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-        <div style={{ gap: "10px", display: "flex" }}>
+      <div style={{ display: "flex", gap: "20px" }}>
+        <div style={{ gap: "10px", display: "flex", flexDirection: "column" }}>
           <input
             onChange={(e) => {
               setNumberOne(+e.target.value);
@@ -37,12 +37,11 @@ export const App = () => {
             type="text"
             value={numberOne}
           />
-
-          <button onClick={dividedSum}>/</button>
-          <button onClick={multiplySum}>x</button>
+          <button onClick={calculateSum}>+</button>
+          <button onClick={decreaseSum}>-</button>
         </div>
 
-        <div>
+        <div style={{ gap: "10px", display: "flex", flexDirection: "column" }}>
           <input
             type="text"
             value={numberTwo}
@@ -50,12 +49,12 @@ export const App = () => {
               setNumberTwo(+e.target.value);
             }}
           />
-          <button onClick={calculateSum}>+</button>
-          <button onClick={decreaseSum}>-</button>
+          <button onClick={dividedSum}>/</button>
+          <button onClick={multiplySum}>x</button>
         </div>
-
-        <label>result : {result}</label>
       </div>
+
+      <h2>result : {result}</h2>
     </div>
   );
 };
