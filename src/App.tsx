@@ -20,9 +20,11 @@ export const App = () => {
         <div>
           <Link to="/calculator"> Calculator </Link>
         </div>
-        <div><Link to="/aboutus"> About us </Link></div>
+        <div>
+          <Link to="/aboutus"> About us </Link>
+        </div>
       </div>
-      {/* <div className="container">
+      <div className="container">
         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <h1>Play-Calculator</h1>
           <div style={{ display: "flex", gap: "20px" }}>
@@ -56,8 +58,8 @@ export const App = () => {
           </div>
 
           <h2>result : {result}</h2>
-        </div> */}
-      {/* </div> */}
+        </div>
+      </div>
     </div>
   );
 };
