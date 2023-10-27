@@ -1,7 +1,7 @@
 // import React from 'react';
 import { useState } from "react";
 
-export default function calculator() {
+function calculator() {
   const [result, setResult] = useState(0);
   const [numberOne, setNumberOne] = useState(0);
   const [numberTwo, setNumberTwo] = useState(0);
@@ -51,3 +51,4 @@ export default function calculator() {
     </div>
   );
 }
+export {calculator};
