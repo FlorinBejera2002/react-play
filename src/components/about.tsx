@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function calculator() {
+export default function about() {
   return (
     <div>
-      
+      About us
     </div>
   )
 }
