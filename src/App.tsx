@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { calculator } from "./components/calculator";
 
 export const App = () => (
+
   <Router>
     <div>
       <nav>
@@ -11,7 +12,7 @@ export const App = () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/calculator">Calculator</Link>
+            <Link to="/calculator()">Calculator</Link>
           </li>
           <li>
             <Link to="">About us</Link>
