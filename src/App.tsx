@@ -1,5 +1,6 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { calculator } from "./components/calculator";
 
 export const App = () => (
   <Router>
@@ -9,8 +10,12 @@ export const App = () => (
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <Link to="/calculator">Calculator</Link>
+          </li>
+          <li>
+            <Link to="">About us</Link>
+          </li>
         </ul>
       </nav>
     </div>
