@@ -14,7 +14,7 @@ export const App = () => (
             <Link to=''>Calculator</Link>
           </li>
           <li>
-            <Link to="">About us</Link>
+            <Link to="">About us.</Link>
           </li>
         </ul>
       </nav>
