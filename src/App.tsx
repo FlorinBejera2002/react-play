@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export const App = () => (
 
@@ -14,7 +14,7 @@ export const App = () => (
           <li>
             <Link to=''>Calculator</Link>
           </li>
-          
+
           <li>
             <Link to="">About us.</Link>
           </li>
