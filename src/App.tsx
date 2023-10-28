@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { calculator } from "./components/calculator";
 
 export const App = () => (
