@@ -10,9 +10,11 @@ export const App = () => (
           <li>
             <Link to="/">Home</Link>
           </li>
+
           <li>
             <Link to=''>Calculator</Link>
           </li>
+          
           <li>
             <Link to="">About us.</Link>
           </li>
