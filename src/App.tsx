@@ -1,26 +1,18 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import calculator from "./components/calculator";
+import about from "./components/about/about";
+import { Routes, Route } from "react-router-dom";
 
-export const App = () => (
-
-  <Router>
+export const App = () => {
+  return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to=''>Calculator</Link>
-          </li>
-
-          <li>
-            <Link to="">About us.</Link>
-          </li>
-        </ul>
-      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
-  </Router>
-);
+  );
+};
